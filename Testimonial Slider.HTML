@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testimonials</title>
+</head>
+<body>
+    <h2 id="testi">"Great service!"</h2>
+    <button onclick="changeTestimonial()">Next</button>
+    <script>
+        let testimonials = ["Great service!", "Excellent support!", "Highly recommended!"];
+        let index = 0;
+        function changeTestimonial() {
+            index = (index + 1) % testimonials.length;
+            document.getElementById("testi").innerText = testimonials[index];
+        }
+    </script>
+</body>
+</html>
